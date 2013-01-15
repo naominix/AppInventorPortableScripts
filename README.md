@@ -6,3 +6,8 @@ App Inventor Portable for Windows‚ÍApp Inventor‚ÌBlocksEditor‚ð‹N“®‚·‚é‚½‚ß‚É•K—
  
 Ú×‚Èî•ñ‚ÍƒuƒƒO[App Inventor‚Ås‚±‚¤I](http://ainaominix.blogspot.jp/) ‚ðŽQÆ‚µ‚Ä‚­‚¾‚³‚¢B
 
+‚²’ˆÓ
+------
+ƒoƒbƒ`ƒtƒ@ƒCƒ‹‚Ì’†‚É‚ÍƒŒƒWƒXƒgƒŠ‚Ì•ÏXiŠÇ—ŽÒŒ ŒÀ‚ð—˜—p‚·‚é‚à‚Ì‚Æ‚»‚¤‚Å‚È‚¢‚à‚Ìj‚ð”º‚¤‚à‚Ì‚ª‚ ‚è‚Ü‚·B
+–{ƒoƒbƒ`ƒtƒ@ƒCƒ‹ŒQ‚ð‚²—˜—p‚ÌŒ‹‰ÊA”­¶‚µ‚½‘¹ŠQ‚ÉŠÖ‚µ‚Ä‚ÍˆêØÓ”C‚ð•‰‚¤‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñ‚Ì‚Å‚²—¹³‚Ìã‚²—˜—p‚­‚¾‚³‚¢B
+
