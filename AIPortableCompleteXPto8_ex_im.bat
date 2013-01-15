@@ -1,16 +1,31 @@
 @echo off
 REM App Inventor Portable Batch File for Windows
-REM non-Root / USB UserHome Version.
+REM non-Admin / USB UserHome Version
+REM Author : HOSHINO Hisashi
 :STARTING
+REM SERVERを起動する場合は1を起動しない場合は0を定義
+REM ただし、32bit環境ではBuildサーバが起動しないので自動的に64bit環境Javaを選択します
+REM 32bit環境ではBuildサーバは動きませんのでご了承ください。
+set SERVER=0
+REM バッチファイルを実行しているドライブ名カレントフォルダ名の取得
+set CURDIR=%~dp0
+IF %SERVER% == 1 (
+    REM JAVA_HOMEをUSBメモリ内のJDK(64bit)に指定
+    set JAVA_HOME=%CURDIR%\jdk1.6.0_37
+) ELSE (
+    REM JAVA_HOMEをUSBメモリ内のJDK(32bit)に指定
+    set JAVA_HOME=%CURDIR%\jdk1.6.0_37_32
+)
+REM PATH環境変数の一時保存
+set STPATH=%PATH%
+REM USBメモリ内のJDKにPATHを最優先で通す
+set PATH=%JAVA_HOME%\bin;%PATH%
+REM USBメモリ内にユーザホームの.appinventorフォルダを作成するための準備
+set AIDIR=%CURDIR%\.appinventor
+set AIDIREXIST=0
 echo *************************************
 echo AppInventor実行環境セットアップ
 echo *************************************
-set CURDIR=%~dp0
-set JAVA_HOME=%CURDIR%\jdk1.6.0_37_32
-set STPATH=%PATH%
-set PATH=%JAVA_HOME%\bin;%PATH%
-set AIDIR=%CURDIR%\.appinventor
-set AIDIREXIST=0
 IF EXIST "%AIDIR%" (
     set AIDIREXIST=1
 )
@@ -55,6 +70,16 @@ IF %ERRORLEVEL% == 0 (
 ) ELSE (
     echo FileExts\.jnlpキーをPortable用に設定します
     reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.jnlp\UserChoice /v ProgId /t REG_SZ /d "jnlp_auto_file"
+)
+IF %SERVER% == 1 (
+    echo **************************************************
+    echo App Inventor Serverを起動します
+    echo **************************************************
+    start /MIN %~dp0\AI4A\AppEngine\startAI.cmd
+    echo **************************************************
+    echo Build Serverを起動します
+    echo **************************************************
+    start /MIN %~dp0\AI4A\BuildServer\launch-buildserver.cmd
 )
 echo **************************************************
 echo App Inventor Portableの設定が完了しました
