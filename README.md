@@ -11,3 +11,19 @@ App Inventor Portable for Windows‚ÍApp Inventor‚ÌBlocksEditor‚ð‹N“®‚·‚é‚½‚ß‚É•K—
 ƒoƒbƒ`ƒtƒ@ƒCƒ‹‚Ì’†‚É‚ÍƒŒƒWƒXƒgƒŠ‚Ì•ÏXiŠÇ—ŽÒŒ ŒÀ‚ð—˜—p‚·‚é‚à‚Ì‚Æ‚»‚¤‚Å‚È‚¢‚à‚Ìj‚ð”º‚¤‚à‚Ì‚ª‚ ‚è‚Ü‚·B
 –{ƒoƒbƒ`ƒtƒ@ƒCƒ‹ŒQ‚ð‚²—˜—p‚ÌŒ‹‰ÊA”­¶‚µ‚½‘¹ŠQ‚ÉŠÖ‚µ‚Ä‚ÍˆêØÓ”C‚ð•‰‚¤‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñ‚Ì‚Å‚²—¹³‚Ìã‚²—˜—p‚­‚¾‚³‚¢B
 
+USBƒƒ‚ƒŠ‚ÌƒZƒbƒgƒAƒbƒv
+------
+USBƒƒ‚ƒŠ‚Ìì¬•û–@‚ÍƒuƒƒOƒGƒ“ƒgƒŠ‚ðŽQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+‚È‚¨AApp InventorŠÖ˜AƒT[ƒo‚ðUSBƒƒ‚ƒŠ‚©‚ç‹N“®‚·‚éê‡‚ÍJDK‚ð32bit‚Æ64bit‚Ì—¼•û‚ð“ü‚ê‚Ä‚¨‚­‚±‚Æ‚ðƒIƒXƒXƒ‚µ‚Ü‚·B
+ƒoƒbƒ`ƒtƒ@ƒCƒ‹“à‚ÌŠY“–ƒtƒHƒ‹ƒ_–¼‚Í“K‹X•ÏX‚µ‚Ä‚­‚¾‚³‚¢B
+
+ÅV‚Ìƒoƒbƒ`ƒtƒ@ƒCƒ‹
+------
+AIPortableCompleteXPto8_ex_im.bat
+
+‚±‚Ìƒoƒbƒ`ƒtƒ@ƒCƒ‹‚Íƒ†[ƒUŒ ŒÀ‚ÅƒŒƒWƒXƒgƒŠ‚ð•ÏX‚µ‚Ü‚·Bƒoƒbƒ`ƒtƒ@ƒCƒ‹‚Ì“à—e‚ð—Ç‚­Šm”F‚µ‚Ä‚­‚¾‚³‚¢B
+•ÏX‘ÎÛ‚ÌƒŒƒWƒXƒgƒŠƒL[‚ª‚·‚Å‚É‘¶Ý‚µ‚Ä‚¢‚éê‡‚ÍAUSBƒƒ‚ƒŠ‚Ìƒoƒbƒ`ƒtƒ@ƒCƒ‹‚Æ“¯‚¶ƒtƒHƒ‹ƒ_‚É*.reg‚Æ‚¢‚¤Šg’£Žq‚ÅŠY“–ƒŒƒWƒXƒgƒŠ‚ªexport‚³‚ê‚Ü‚·B
+S”z‚Èê‡‚Í‚±‚Ìƒtƒ@ƒCƒ‹‚ð•Ê‚ÌêŠ‚ÉƒoƒbƒNƒAƒbƒv‚µ‚Ä‚¨‚¢‚Ä‚­‚¾‚³‚¢Bƒoƒbƒ`ƒtƒ@ƒCƒ‹‚ðI—¹‚³‚¹‚Ä‚µ‚Ü‚¤‚Æ‚±‚ê‚ç‚Ìƒtƒ@ƒCƒ‹‚ÍŽ©“®“I‚Éíœ‚³‚ê‚Ü‚·‚Ì‚Å‚²’ˆÓ‚­‚¾‚³‚¢B
+
+App InventorƒT[ƒo‚ÆBuildƒT[ƒo‚ð‹N“®‚·‚éê‡‚Íƒoƒbƒ`ƒtƒ@ƒCƒ‹’†‚ÌSERVERŠÂ‹«•Ï”‚É1‚ðƒZƒbƒg‚µ‚Ä‚­‚¾‚³‚¢B‚±‚Ìê‡A64bitJava‚ª•K—v‚É‚È‚è‚Ü‚·‚Ì‚Å–Y‚ê‚¸‚ÉƒCƒ“ƒXƒg[ƒ‹‚µ‚Ä‚­‚¾‚³‚¢B
+
