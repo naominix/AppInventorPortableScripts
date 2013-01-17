@@ -9,12 +9,15 @@ REM 32bit環境ではBuildサーバは動きませんのでご了承ください。
 set SERVER=0
 REM バッチファイルを実行しているドライブ名カレントフォルダ名の取得
 set CURDIR=%~dp0
-IF %SERVER% == 1 (
-    REM JAVA_HOMEをUSBメモリ内のJDK(64bit)に指定
+IF "%SERVER%" == 1 (
+    echo "JAVA_HOMEをUSBメモリ内のJDK(64bit)に指定"
     set JAVA_HOME=%CURDIR%\jdk1.7.0_11
-) ELSE (
-    REM JAVA_HOMEをUSBメモリ内のJDK(32bit)に指定
+) ELSE IF NOT "%PROCESSOR_ARCHITECTURE%" == "AMD64" (
+    echo "JAVA_HOMEをUSBメモリ内のJDK(32bit)に指定"
     set JAVA_HOME=%CURDIR%\jdk1.6.0_38_32
+) ELSE (
+    echo "64bit OSの場合はサーバ起動なしでもJAVA_HOMEをUSBメモリ内のJDK(64bit)に指定"
+    set JAVA_HOME=%CURDIR%\jdk1.7.0_11
 )
 REM PATH環境変数の一時保存
 set STPATH=%PATH%
@@ -47,7 +50,7 @@ IF %ERRORLEVEL% == 0 (
     reg export HKCU\Software\Classes\jnlp_auto_file %CURDIR%\jnlp_auto_file_BkUp.reg
 )
 echo jnlp_auto_fileキーをPortable用に変更します
-reg add HKCU\Software\Classes\jnlp_auto_file\shell\open\command /ve /t REG_SZ /d "%JAVA_HOME%\jre\bin\javaws.exe -J-Duser.home=%CURDIR% \"%%1\""
+reg add HKCU\Software\Classes\jnlp_auto_file\shell\open\command /ve /t REG_SZ /d "%JAVA_HOME%\jre\bin\javaws.exe -J-Duser.home=%CURDIR% \"%%1\"" /f
 echo *************************************
 echo .jnlpキーの存在チェック
 echo *************************************
