@@ -3,9 +3,8 @@ REM App Inventor Portable Batch File for Windows
 REM non-Admin / USB UserHome Version
 REM Author : naominix
 :STARTING
-REM SERVERを起動する場合は1を起動しない場合は0を定義
-REM ただし、32bit環境ではBuildサーバが起動しないので自動的に64bit環境Javaを選択します
-REM 32bit環境ではBuildサーバは動きませんのでご了承ください。
+REM SERVERを起動する場合は1を起動しない場合は0を定義（"1"は64bit環境のみ設定してださい）
+REM 32bit環境ではBuildサーバが動きませんので予めご了承ください。
 set SERVER=0
 REM バッチファイルを実行しているドライブ名カレントフォルダ名の取得
 set CURDIR=%~dp0
@@ -14,7 +13,7 @@ IF "%SERVER%" == 1 (
     set JAVA_HOME=%CURDIR%\jdk1.7.0_11
 ) ELSE IF NOT "%PROCESSOR_ARCHITECTURE%" == "AMD64" (
     echo "JAVA_HOMEをUSBメモリ内のJDK(32bit)に指定"
-    set JAVA_HOME=%CURDIR%\jdk1.6.0_38_32
+    set JAVA_HOME=%CURDIR%\jdk1.7.0_11_32
 ) ELSE (
     echo "64bit OSの場合はサーバ起動なしでもJAVA_HOMEをUSBメモリ内のJDK(64bit)に指定"
     set JAVA_HOME=%CURDIR%\jdk1.7.0_11
